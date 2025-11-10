@@ -1,32 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-11-10 14:34:39.118127",
+ "creation": "2025-11-10 17:08:42.030527",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "stocklist_code_section",
-  "stocklist_code"
+  "section_break_hric",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "stocklist_code_section",
-   "fieldtype": "Section Break",
-   "label": "stocklist_Master "
+   "fieldname": "section_break_hric",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "stocklist_code",
-   "fieldtype": "Data",
-   "label": "stocklist_code"
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Scheme Entry Doctype",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-11-10 14:52:38.812696",
+ "modified": "2025-11-10 17:08:42.030527",
  "modified_by": "Administrator",
  "module": "Hello",
- "name": "stocklist_master",
+ "name": "Scheme Entry Doctype",
  "owner": "Administrator",
  "permissions": [
   {
@@ -39,6 +44,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
