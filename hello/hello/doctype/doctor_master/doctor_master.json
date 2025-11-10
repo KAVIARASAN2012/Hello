@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-11-10 12:44:37.573662",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "doctor_code",
+  "doctor_name",
+  "qualification",
+  "doctor_type",
+  "hospital_addres",
+  "place",
+  "team",
+  "region",
+  "state",
+  "zone",
+  "is_deleted"
+ ],
+ "fields": [
+  {
+   "description": "Naming Field",
+   "fieldname": "doctor_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor Code",
+   "reqd": 1
+  },
+  {
+   "description": "Search Field",
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Doctor Name",
+   "reqd": 1
+  },
+  {
+   "description": "MS, MD, etc",
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "description": "Top Prescribers, etc.",
+   "fieldname": "doctor_type",
+   "fieldtype": "Select",
+   "label": "Doctor Type"
+  },
+  {
+   "description": "Hospital location",
+   "fieldname": "hospital_addres",
+   "fieldtype": "Small Text",
+   "label": "Hospital Address"
+  },
+  {
+   "description": "City",
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "description": "Team name",
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "label": "Team"
+  },
+  {
+   "description": "Region name",
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "description": "State name",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "description": "Zone ",
+   "fieldname": "zone",
+   "fieldtype": "Select",
+   "label": "Zone"
+  },
+  {
+   "columns": 2,
+   "default": "No",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Yes",
+   "options": "Yes",
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-10 14:18:13.551662",
+ "modified_by": "Administrator",
+ "module": "Hello",
+ "name": "Doctor Master",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
