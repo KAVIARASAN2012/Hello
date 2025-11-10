@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2025-11-10 14:42:48.387499",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_code",
+  "product_name",
+  "pack",
+  "product_head",
+  "pts_value",
+  "ptr_value",
+  "mrp_value",
+  "nrv_value",
+  "is_active",
+  "food_product"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pack",
+   "fieldtype": "Data",
+   "label": "Pack"
+  },
+  {
+   "fieldname": "product_head",
+   "fieldtype": "Data",
+   "label": "Product Head"
+  },
+  {
+   "fieldname": "pts_value",
+   "fieldtype": "Currency",
+   "label": "PTS Value"
+  },
+  {
+   "fieldname": "ptr_value",
+   "fieldtype": "Currency",
+   "label": "PTR Value"
+  },
+  {
+   "fieldname": "mrp_value",
+   "fieldtype": "Currency",
+   "label": "MRP Value"
+  },
+  {
+   "fieldname": "nrv_value",
+   "fieldtype": "Currency",
+   "label": "NRV Value"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Active",
+   "reqd": 1
+  },
+  {
+   "fieldname": "food_product",
+   "fieldtype": "Select",
+   "label": "Food Product"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-10 14:52:15.951827",
+ "modified_by": "Administrator",
+ "module": "Hello",
+ "name": "Product Master",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
